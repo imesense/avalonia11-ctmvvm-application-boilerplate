@@ -17,6 +17,20 @@ indent_size = 4
 indent_style = space
 insert_final_newline = true
 
+# DotNet files
+[*.{resx,settings}]
+charset = utf-8
+end_of_line = crlf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+[{global,dotnet-tools}.json]
+charset = utf-8
+end_of_line = crlf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+
 # Git files
 [.{gitattributes,gitignore}]
 charset = utf-8

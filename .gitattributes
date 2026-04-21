@@ -8,6 +8,12 @@
 # Markdown documents
 *.md text eol=crlf encoding=utf-8
 
+# DotNet files
+*.resx text eol=crlf encoding=utf-8
+*.settings text eol=crlf encoding=utf-8
+global.json text eol=crlf encoding=utf-8
+dotnet-tools.json text eol=crlf encoding=utf-8
+
 # Git configs
 .gitattributes text eol=lf encoding=utf-8
 .gitignore text eol=lf encoding=utf-8
