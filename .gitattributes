@@ -28,3 +28,6 @@ dotnet-tools.json text eol=crlf encoding=utf-8
 
 # EditorConfig files
 .editorconfig text eol=crlf encoding=utf-8
+
+# NuGet files
+NuGet.config text eol=crlf encoding=utf-8

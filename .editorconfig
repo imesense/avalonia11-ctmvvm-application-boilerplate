@@ -60,3 +60,11 @@ end_of_line = crlf
 indent_size = 4
 indent_style = space
 insert_final_newline = true
+
+# NuGet files
+[NuGet.config]
+charset = utf-8
+end_of_line = crlf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
