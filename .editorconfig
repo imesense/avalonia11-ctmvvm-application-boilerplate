@@ -17,6 +17,21 @@ indent_size = 4
 indent_style = space
 insert_final_newline = true
 
+# MSBuild files
+[*.sln]
+charset = utf-8-bom
+end_of_line = crlf
+indent_size = 4
+indent_style = tab
+insert_final_newline = true
+tab_width = 4
+[*.{slnx,slnf,csproj,props,targets}]
+charset = utf-8
+end_of_line = crlf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+
 # DotNet files
 [*.{resx,settings}]
 charset = utf-8

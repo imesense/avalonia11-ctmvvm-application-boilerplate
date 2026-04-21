@@ -8,6 +8,14 @@
 # Markdown documents
 *.md text eol=crlf encoding=utf-8
 
+# MSBuild files
+*.sln text eol=crlf encoding=utf-8-bom
+*.slnx text eol=crlf encoding=utf-8
+*.slnf text eol=crlf encoding=utf-8
+*.csproj text eol=crlf encoding=utf-8
+*.props text eol=crlf encoding=utf-8
+*.targets text eol=crlf encoding=utf-8
+
 # DotNet files
 *.resx text eol=crlf encoding=utf-8
 *.settings text eol=crlf encoding=utf-8
