@@ -3,3 +3,15 @@
 # System cache
 .DS_Store
 Thumbs.db
+
+# Visual Studio cache and settings
+.vs/
+*.suo
+*.user
+
+# NuGet cache
+.nuget/
+
+# Build results
+bin/
+obj/
