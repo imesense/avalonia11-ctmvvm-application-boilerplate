@@ -1,0 +1,17 @@
+<Window
+    x:Class="ImeSense.Boilerplates.Avalonia.Views.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:v="using:ImeSense.Boilerplates.Avalonia.Views"
+    mc:Ignorable="d"
+    d:DesignWidth="800"
+    d:DesignHeight="450"
+    Width="800"
+    Height="450"
+    Title="Avalonia"
+    Icon="/Assets/Logo.ico"
+    WindowStartupLocation="CenterScreen">
+    <v:MainView />
+</Window>

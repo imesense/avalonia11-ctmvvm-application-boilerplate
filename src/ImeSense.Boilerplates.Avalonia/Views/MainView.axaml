@@ -1,0 +1,16 @@
+<UserControl
+    x:Class="ImeSense.Boilerplates.Avalonia.Views.MainView"
+    x:DataType="vm:MainViewModel"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:vm="using:ImeSense.Boilerplates.Avalonia.ViewsModels"
+    mc:Ignorable="d"
+    d:DesignWidth="800"
+    d:DesignHeight="450">
+    <Grid>
+        <Label
+            Content="123" />
+    </Grid>
+</UserControl>
