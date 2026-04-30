@@ -23,6 +23,6 @@
         </PackageReference>
         <PackageReference Include="Avalonia.Fonts.Inter" Version="11.3.14" />
         <PackageReference Include="Avalonia.Themes.Simple" Version="11.3.14" />
-        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
     </ItemGroup>
 </Project>
