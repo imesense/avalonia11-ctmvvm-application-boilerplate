@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImeSense.Boilerplates.Avalo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImeSense.Boilerplates.Avalonia.Linux", "src\ImeSense.Boilerplates.Avalonia.Linux\ImeSense.Boilerplates.Avalonia.Linux.csproj", "{3DBA93EB-7B6E-48D5-E166-6D954E49E70C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImeSense.Boilerplates.Avalonia.Android", "src\ImeSense.Boilerplates.Avalonia.Android\ImeSense.Boilerplates.Avalonia.Android.csproj", "{248AF62E-9590-7DFF-33DD-F43B0469880B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,12 @@ Global
 		{3DBA93EB-7B6E-48D5-E166-6D954E49E70C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DBA93EB-7B6E-48D5-E166-6D954E49E70C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DBA93EB-7B6E-48D5-E166-6D954E49E70C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{248AF62E-9590-7DFF-33DD-F43B0469880B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{248AF62E-9590-7DFF-33DD-F43B0469880B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{248AF62E-9590-7DFF-33DD-F43B0469880B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{248AF62E-9590-7DFF-33DD-F43B0469880B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{248AF62E-9590-7DFF-33DD-F43B0469880B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{248AF62E-9590-7DFF-33DD-F43B0469880B}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
