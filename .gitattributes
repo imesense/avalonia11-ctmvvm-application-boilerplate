@@ -2,11 +2,15 @@
 
 * text=auto
 
-# Text documents
+# Text files
 *.txt text eol=crlf encoding=utf-8
 
-# Markdown documents
+# Markdown files
 *.md text eol=crlf encoding=utf-8
+
+# macOS and iOS files
+*.plist text eol=lf encoding=utf-8
+*.icns binary
 
 # XAML files
 *.xaml text eol=crlf encoding=utf-8
@@ -29,7 +33,7 @@
 global.json text eol=crlf encoding=utf-8
 dotnet-tools.json text eol=crlf encoding=utf-8
 
-# Git configs
+# Git files
 .gitattributes text eol=lf encoding=utf-8
 .gitignore text eol=lf encoding=utf-8
 

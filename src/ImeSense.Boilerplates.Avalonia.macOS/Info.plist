@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>CFBundlePackageType</key>
+        <string>APPL</string>
+        <key>CFBundleSignature</key>
+        <string>????</string>
+
+        <key>CFBundleExecutable</key>
+        <string>ImeSense.Boilerplates.Avalonia.macOS</string>
+        <key>CFBundleName</key>
+        <string>AvaloniaApplication</string>
+        <key>CFBundleDisplayName</key>
+        <string>AvaloniaApplication</string>
+        <key>CFBundleIdentifier</key>
+        <string>org.imesense.avaloniaapplication</string>
+        <key>CFBundleVersion</key>
+        <string>0.1.0</string>
+        <key>CFBundleShortVersionString</key>
+        <string>0.1.0</string>
+
+        <key>CFBundleIconFile</key>
+        <string>Icon.icns</string>
+        <key>CFBundleIconName</key>
+        <string>Icon</string>
+
+        <key>NSHighResolutionCapable</key>
+        <true />
+
+        <key>LSMinimumSystemVersion</key>
+        <string>11.0</string>
+    </dict>
+</plist>

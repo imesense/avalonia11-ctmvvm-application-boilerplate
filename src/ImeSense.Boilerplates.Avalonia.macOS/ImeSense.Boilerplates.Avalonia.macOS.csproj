@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <OutputType>WinExe</OutputType>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>disable</ImplicitUsings>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <RuntimeIdentifiers>osx-x64;osx-arm64</RuntimeIdentifiers>
+        <UseAppHost>true</UseAppHost>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <BundleName>AvaloniaApplication</BundleName>
+        <BundlePath>$(BaseOutputPath)/$(Configuration)/$(TargetFramework)/$(BundleName).app</BundlePath>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <OutputPath>$(BaseOutputPath)/$(Configuration)/$(TargetFramework)/$(BundleName).app/Contents/MacOS</OutputPath>
+        <PublishDir>$(BaseOutputPath)/$(Configuration)/$(TargetFramework)/publish</PublishDir>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia.Desktop" Version="11.3.14" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ImeSense.Boilerplates.Avalonia\ImeSense.Boilerplates.Avalonia.csproj" />
+    </ItemGroup>
+
+    <Target
+        Name="CopyPlist"
+        AfterTargets="Build">
+        <Copy
+            SourceFiles="Entitlements.plist"
+            DestinationFolder="$(BundlePath)/Contents/" />
+        <Copy
+            SourceFiles="Info.plist"
+            DestinationFolder="$(BundlePath)/Contents/" />
+    </Target>
+
+    <Target
+        Name="CopyIcons"
+        AfterTargets="Build">
+        <Copy
+            SourceFiles="Icon.icns"
+            DestinationFolder="$(BundlePath)/Contents/Resources/" />
+    </Target>
+
+    <Target
+        Name="CreateBundle"
+        AfterTargets="Publish">
+        <PropertyGroup>
+            <BundleName>AvaloniaApplication</BundleName>
+            <BundlePath>$(BaseOutputPath)/$(Configuration)/$(BundleName).app</BundlePath>
+        </PropertyGroup>
+
+        <ItemGroup>
+            <BundleFiles
+                Include="$(PublishDir)/**/*"
+                Exclude="$(PublishDir)/**/*.pdb" />
+        </ItemGroup>
+
+        <MakeDir Directories="$(BundlePath)/Contents/MacOS/" />
+        <MakeDir Directories="$(BundlePath)/Contents/Resources/" />
+
+        <Copy
+            SourceFiles="Entitlements.plist"
+            DestinationFolder="$(BundlePath)/Contents/" />
+        <Copy
+            SourceFiles="Info.plist"
+            DestinationFolder="$(BundlePath)/Contents/" />
+
+        <Copy
+            SourceFiles="Icon.icns"
+            DestinationFolder="$(BundlePath)/Contents/Resources/" />
+
+        <Copy
+            SourceFiles="@(BundleFiles)"
+            DestinationFiles="@(BundleFiles->'$(BundlePath)/Contents/MacOS/%(RecursiveDir)%(FileName)%(Extension)')" />
+    </Target>
+</Project>
