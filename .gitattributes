@@ -5,12 +5,35 @@
 # Text files
 *.txt text eol=crlf encoding=utf-8
 
+# Image files
+*.ico binary
+*.png binary
+*.icns binary
+
 # Markdown files
 *.md text eol=crlf encoding=utf-8
 
-# macOS and iOS files
+# Windows files
+*.manifest text eol=crlf encoding=utf-8
+
+# Apple files
 *.plist text eol=lf encoding=utf-8
-*.icns binary
+
+# XML files
+*.xml text eol=crlf encoding=utf-8
+
+# JSON files
+*.json text eol=crlf encoding=utf-8
+
+# HTML files
+*.htm text eol=crlf encoding=utf-8
+*.html text eol=crlf encoding=utf-8
+
+# CSS files
+*.css text eol=crlf encoding=utf-8
+
+# JavaScript files
+*.js text eol=crlf encoding=utf-8
 
 # XAML files
 *.xaml text eol=crlf encoding=utf-8

@@ -13,6 +13,62 @@ insert_final_newline = true
 [*.md]
 charset = utf-8
 end_of_line = crlf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+
+# Windows files
+[*.manifest]
+charset = utf-8
+end_of_line = crlf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+
+# Apple files
+[*.plist]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+
+# XML files
+[*.xml]
+charset = utf-8
+end_of_line = crlf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+
+# JSON files
+[*.json]
+charset = utf-8
+end_of_line = crlf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+
+# HTML files
+[*.{htm,html}]
+charset = utf-8
+end_of_line = crlf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+
+# CSS files
+[*.css]
+charset = utf-8
+end_of_line = crlf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+
+# JavaScript files
+[*.js]
+charset = utf-8
+end_of_line = crlf
 indent_size = 4
 indent_style = space
 insert_final_newline = true
