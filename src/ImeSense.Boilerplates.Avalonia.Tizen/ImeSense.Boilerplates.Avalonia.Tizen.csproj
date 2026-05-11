@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0-tizen10.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>disable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Folder Include="lib\" />
+        <Folder Include="res\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia.Tizen" Version="11.3.14" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ImeSense.Boilerplates.Avalonia\ImeSense.Boilerplates.Avalonia.csproj" />
+    </ItemGroup>
+</Project>
