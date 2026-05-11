@@ -18,6 +18,7 @@
 
 # Apple files
 *.plist text eol=lf encoding=utf-8
+*.xib text eol=lf encoding=utf-8
 
 # XML files
 *.xml text eol=crlf encoding=utf-8

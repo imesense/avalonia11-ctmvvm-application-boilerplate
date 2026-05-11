@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImeSense.Boilerplates.Avalo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImeSense.Boilerplates.Avalonia.macOS", "src\ImeSense.Boilerplates.Avalonia.macOS\ImeSense.Boilerplates.Avalonia.macOS.csproj", "{31E3D14D-E07D-3396-21E7-09702F0CD619}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImeSense.Boilerplates.Avalonia.iOS", "src\ImeSense.Boilerplates.Avalonia.iOS\ImeSense.Boilerplates.Avalonia.iOS.csproj", "{5924A0B1-5175-ECB3-BA4E-0D9CB092C956}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,12 @@ Global
 		{31E3D14D-E07D-3396-21E7-09702F0CD619}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31E3D14D-E07D-3396-21E7-09702F0CD619}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31E3D14D-E07D-3396-21E7-09702F0CD619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5924A0B1-5175-ECB3-BA4E-0D9CB092C956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5924A0B1-5175-ECB3-BA4E-0D9CB092C956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5924A0B1-5175-ECB3-BA4E-0D9CB092C956}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5924A0B1-5175-ECB3-BA4E-0D9CB092C956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5924A0B1-5175-ECB3-BA4E-0D9CB092C956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5924A0B1-5175-ECB3-BA4E-0D9CB092C956}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -32,6 +32,11 @@ end_of_line = lf
 indent_size = 4
 indent_style = space
 insert_final_newline = true
+[*.xib]
+charset = utf-8
+end_of_line = lf
+indent_style = tab
+insert_final_newline = true
 
 # XML files
 [*.xml]
