@@ -1,3 +1,5 @@
+using System;
+
 using Android.App;
 using Android.Content.PM;
 
@@ -5,9 +7,12 @@ using Avalonia;
 using Avalonia.Android;
 
 using ImeSense.Boilerplates.Avalonia.Views;
+using ImeSense.Boilerplates.Avalonia.ViewsModels;
 
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace ImeSense.Boilerplates.Avalonia.Android;
 
@@ -29,10 +34,25 @@ public class MainActivity : AvaloniaMainActivity<App>
 
     protected override AppBuilder CustomizeAppBuilder(AppBuilder builder)
     {
+        string basePath = AppContext.BaseDirectory;
+
         _host = Host.CreateDefaultBuilder()
+            .ConfigureAppConfiguration(config =>
+            {
+                config.SetBasePath(basePath);
+                config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+            })
+            .ConfigureLogging(logging =>
+            {
+                logging.ClearProviders();
+                logging.AddConsole();
+                logging.AddDebug();
+            })
             .ConfigureServices(services =>
             {
                 services.AddSingleton<MainView>();
+                services.AddSingleton<MainViewModel>();
+                services.AddLogging();
             })
             .Build();
 
@@ -65,10 +85,25 @@ public class MainActivity : AvaloniaMainActivity<App>
     {
         if (_isHostDisposed && _app != null)
         {
+            string basePath = AppContext.BaseDirectory;
+
             _host = Host.CreateDefaultBuilder()
+                .ConfigureAppConfiguration(config =>
+                {
+                    config.SetBasePath(basePath);
+                    config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                })
+                .ConfigureLogging(logging =>
+                {
+                    logging.ClearProviders();
+                    logging.AddConsole();
+                    logging.AddDebug();
+                })
                 .ConfigureServices(services =>
                 {
                     services.AddSingleton<MainView>();
+                    services.AddSingleton<MainViewModel>();
+                    services.AddLogging();
                 })
                 .Build();
 

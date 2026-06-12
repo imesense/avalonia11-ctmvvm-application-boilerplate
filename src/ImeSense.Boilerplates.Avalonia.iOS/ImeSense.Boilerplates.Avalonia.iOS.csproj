@@ -24,4 +24,9 @@
     <ItemGroup>
         <ProjectReference Include="..\ImeSense.Boilerplates.Avalonia\ImeSense.Boilerplates.Avalonia.csproj" />
     </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\ImeSense.Boilerplates.Avalonia\appsettings.json" Link="appsettings.json" />
+        <None Include="..\ImeSense.Boilerplates.Avalonia\appsettings.Development.json" Link="appsettings.Development.json" />
+    </ItemGroup>
 </Project>

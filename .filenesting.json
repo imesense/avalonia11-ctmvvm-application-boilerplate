@@ -1,0 +1,15 @@
+{
+    "$schema": "https://www.schemastore.org/vs-nesting.json",
+
+    "root": true,
+
+    "dependentFileProviders": {
+        "add": {
+            "pathSegment": {
+                "add": {
+                    "appsettings.": [ ".json" ]
+                }
+            }
+        }
+    }
+}

@@ -5,18 +5,32 @@ using Avalonia.Browser;
 
 using ImeSense.Boilerplates.Avalonia;
 using ImeSense.Boilerplates.Avalonia.Views;
+using ImeSense.Boilerplates.Avalonia.ViewsModels;
 
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 internal sealed partial class Program
 {
     private static async Task Main(string[] args)
     {
-        using var host = Host.CreateDefaultBuilder(args)
+        using IHost host = Host.CreateDefaultBuilder(args)
+            .ConfigureAppConfiguration(config =>
+            {
+                config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+            })
+            .ConfigureLogging(logging =>
+            {
+                logging.ClearProviders();
+                logging.AddDebug();
+            })
             .ConfigureServices(services =>
             {
                 services.AddSingleton<MainView>();
+                services.AddSingleton<MainViewModel>();
+                services.AddLogging();
             })
             .Build();
 

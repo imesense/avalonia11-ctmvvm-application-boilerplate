@@ -6,6 +6,7 @@ using Avalonia.Data.Core.Plugins;
 using Avalonia.Markup.Xaml;
 
 using ImeSense.Boilerplates.Avalonia.Views;
+using ImeSense.Boilerplates.Avalonia.ViewsModels;
 
 using Microsoft.Extensions.DependencyInjection;
 
@@ -26,11 +27,21 @@ public partial class App : Application
 
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktopLifetime)
         {
-            desktopLifetime.MainWindow = Services?.GetRequiredService<MainWindow>();
+            MainWindow? mainWindow = Services?.GetRequiredService<MainWindow>();
+            if (mainWindow is not null)
+            {
+                mainWindow.DataContext = Services?.GetRequiredService<MainViewModel>();
+            }
+            desktopLifetime.MainWindow = mainWindow;
         }
         else if (ApplicationLifetime is ISingleViewApplicationLifetime singleViewLifetime)
         {
-            singleViewLifetime.MainView = Services?.GetRequiredService<MainView>();
+            MainView? mainView = Services?.GetRequiredService<MainView>();
+            if (mainView is not null)
+            {
+                mainView.DataContext = Services?.GetRequiredService<MainViewModel>();
+            }
+            singleViewLifetime.MainView = mainView;
         }
     }
 }
